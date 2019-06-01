@@ -63,6 +63,7 @@ body, html{
     transition: all 0.3s ease;
 }
 .main-menu{
+    z-index: 4000;
     position: fixed;
     height: 350px;
     width: 300px;
