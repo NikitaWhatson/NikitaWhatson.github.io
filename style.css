@@ -227,6 +227,32 @@ i{
     border-radius: 10% 40% / 50% 20%;
     background-color: rgb(255, 60, 0);
 }
+footer{
+    text-align: center;
+    width: 100%;
+    height: 145px;
+    color: rgb(243, 177, 55);
+    background-color: rgb(12, 12, 12);
+}
+.thanks{
+    padding-top: 5px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Ok{
+    color: rgb(243, 177, 55);
+}
+.ok{
+    font-size: 2.2rem;
+    margin: 0 15px 5px;
+}
+.tel{
+    margin: 5px 10px;
+    color: rgb(243, 177, 55);
+}
 /*FDFSFSDFSDFSD
 SFSDFSFS
 SFSDFS
