@@ -5,7 +5,8 @@ body, html{
     background-image: url("./Images/Wallpapers.jpeg");
     font-family: 'Comfortaa', cursive;
 }
-.hat{
+header{
+    z-index: 55;
     position: absolute;top: -40px;
     width: 100%;
     text-align: center;
@@ -53,6 +54,11 @@ body, html{
 }
 .h1{
     top: 189px;
+}
+.TittleGenres{
+    position: absolute;top: 200px;
+    width: 100%;
+    text-align: center;
 }
 .h2{
     top: 235px;
@@ -102,13 +108,49 @@ i{
     height: 810px;
     overflow: hidden;
 }
+.desGenres{
+    z-index: 55;
+    color: rgb(243, 177, 55);
+    width: 100%;
+    text-align: center;
+    height: 4650px;
+}
+.aboutGenres{
+    font-size: 1.3rem;
+    margin: 0 50px 0 50px;
+}
+.genre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pictures{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+.exPic{
+    width: 110px;
+    height: 250px;
+    object-fit: cover;
+}
+.endPic{
+    border-radius: 0 10px 10px 0;
+}
+.startPic{
+    border-radius: 10px 0 0 10px;
+}
 .topPic{
     filter: blur(2px) brightness(100%) saturate(125%);
     width: 101%;
     height: 101%;
     object-fit: cover;
 }
-.textInfo{
+.textInfo, .textAboutGenres{
     position: absolute;top: 150px;
     font-family: 'Comfortaa', cursive;
     font-size: 1.4rem;
@@ -119,6 +161,9 @@ i{
     text-align: center;
     transition: all 0.1s ease-in-out;
     text-shadow: 0 0 10px rgba(141, 141, 141, 0.993);
+}
+.textAboutGenres{
+    top: 280px;
 }
 .lGenres{
     background: none;
@@ -369,6 +414,10 @@ SFDSDFS
         height: 400px;
         background-color: rgba(0, 0, 0, 0.932);
         color: rgb(243, 177, 55);
+    }
+    .exPic{
+        width: 200px;
+        height: 350px;
     }
     .textAdventage{
         position: absolute;
