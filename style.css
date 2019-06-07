@@ -113,7 +113,7 @@ i{
     color: rgb(243, 177, 55);
     width: 100%;
     text-align: center;
-    height: 4650px;
+    height: 4350px;
 }
 .aboutGenres{
     font-size: 1.3rem;
@@ -350,6 +350,9 @@ SFDSDFS
     }
     .menu-btn{
         display: none;
+    }
+    .desGenres{
+        height: 4650px;
     }
     .Hlink:hover{
         color: rgb(243, 177, 55);
