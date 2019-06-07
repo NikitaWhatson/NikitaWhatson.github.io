@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
 /*Код для телефонов*/
-.h{
-    top: 140px;
-}
-.h1{
-    top: 189px;
-}
 b{
     background-color: rgb(228, 53, 0);
     color: white;
@@ -244,9 +238,6 @@ footer{
     margin: 5px 10px;
     color: rgb(243, 177, 55);
 }
-.h2{
-    top: 235px;
-}
 .logoName{
     font-family: 'Comfortaa', cursive;
     margin-top: 0;
@@ -295,6 +286,15 @@ footer{
 }
 .textAboutGenres{
     top: 280px;
+}
+.h{
+    top: 140px;
+}
+.h1{
+    top: 189px;
+}
+.h2{
+    top: 235px;
 }
 /*Код для компьтеров*/
 @media (min-width: 1024px){
