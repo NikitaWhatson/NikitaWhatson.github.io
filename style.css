@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+/*Код для телефонов*/
+b{
+    background-color: rgb(228, 53, 0);
+    color: white;
+    padding: 0 2px 0 3px;
+    text-shadow: none;
+    border-radius: 10px 5px 10px 5px;
+}
+i{
+    margin-top: 50px;
+    font-size: 500%;
+    transition: all 0.3s ease;
+}
 body, html{
     margin: 0;
     background-image: url("./Images/Wallpapers.jpeg");
@@ -11,6 +24,33 @@ header{
     width: 100%;
     text-align: center;
 }
+.main-menu{
+    z-index: 4000;
+    position: fixed;
+    height: 350px;
+    width: 300px;
+    left: -300px;
+    top: 0;
+    border-radius: 0 0 30px 0;
+    background-color: rgba(0, 0, 0, 0.966);
+    transition: all 0.3s ease;
+}
+.menu_is-open{
+    transform: translateX(300px);
+}
+.menu-btn{
+    z-index: 5000;
+    position: fixed;top: -45px;left: 0;
+    font-size: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.966);
+    padding: 5px 10px 10px 10px;
+    border-radius: 0 0 10px 0;
+    color: white;
+}
+.titleMob{
+    color: white;
+    font-size: 1.5rem;
+}
 .Hlink, .lGenres{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.863);
@@ -20,10 +60,6 @@ header{
     justify-content: center;
     font-weight: 700;
     border-bottom: 0;
-}
-.titleMob{
-    color: white;
-    font-size: 1.5rem;
 }
 .Hlink{
     width: 90%;
@@ -49,100 +85,10 @@ header{
     border-radius: 10px;
     margin: 0;
 }
-.h{
-    top: 140px;
-}
-.h1{
-    top: 189px;
-}
-.TittleGenres{
-    position: absolute;top: 200px;
-    width: 100%;
-    text-align: center;
-}
-.h2{
-    top: 235px;
-}
-.logoName{
-    font-family: 'Comfortaa', cursive;
-    margin-top: 0;
-    transition: all 0.3s ease;
-}
-.main-menu{
-    z-index: 4000;
-    position: fixed;
-    height: 350px;
-    width: 300px;
-    left: -300px;
-    top: 0;
-    border-radius: 0 0 30px 0;
-    background-color: rgba(0, 0, 0, 0.966);
-    transition: all 0.3s ease;
-}
-.menu_is-open{
-    transform: translateX(300px);
-}
-.menu-btn{
-    z-index: 5000;
-    position: fixed;top: -45px;left: 0;
-    font-size: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.966);
-    padding: 5px 10px 10px 10px;
-    border-radius: 0 0 10px 0;
-    color: white;
-}
-b{
-    background-color: rgb(228, 53, 0);
-    color: white;
-    padding: 0 2px 0 3px;
-    text-shadow: none;
-    border-radius: 10px 5px 10px 5px;
-}
-i{
-    margin-top: 50px;
-    font-size: 500%;
-    transition: all 0.3s ease;
-}
 .main{
     width: 100%;
     height: 810px;
     overflow: hidden;
-}
-.desGenres{
-    z-index: 55;
-    color: rgb(243, 177, 55);
-    width: 100%;
-    text-align: center;
-    height: 4650px;
-}
-.aboutGenres{
-    font-size: 1.3rem;
-    margin: 0 5px 0 5px;
-}
-.genre{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.pictures{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    flex-direction: row;
-}
-.exPic{
-    width: 110px;
-    height: 250px;
-    object-fit: cover;
-}
-.endPic{
-    border-radius: 0 10px 10px 0;
-}
-.startPic{
-    border-radius: 10px 0 0 10px;
 }
 .topPic{
     filter: blur(2px) brightness(100%) saturate(125%);
@@ -161,9 +107,6 @@ i{
     text-align: center;
     transition: all 0.1s ease-in-out;
     text-shadow: 0 0 10px rgba(141, 141, 141, 0.993);
-}
-.textAboutGenres{
-    top: 280px;
 }
 .lGenres{
     background: none;
@@ -193,19 +136,19 @@ i{
     font-weight: 900;
     text-align: center;
 }
-.textInAdv{
-    font-size: 20px;
-    font-family: 'Comfortaa', cursive;
-    align-items: center;
-    line-height: 25px;
+.adv1{
+    margin-top: 106px;
 }
 .adv{
     margin: 14px 100px;
     text-align: center;
     font-size: 24px;
 }
-.adv1{
-    margin-top: 106px;
+.textInAdv{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+    line-height: 25px;
 }
 .textInGames{
     color: rgb(243, 177, 55);
@@ -233,13 +176,10 @@ i{
 .nom1{
     width: 155px;
 }
-.Action, .Shuter{
+.Action, .Shuter, .Strategy{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.textBattle, .Title{
-    color: rgb(243, 177, 55);
 }
 .game{
     padding: 5px;
@@ -298,13 +238,65 @@ footer{
     margin: 5px 10px;
     color: rgb(243, 177, 55);
 }
-/*FDFSFSDFSDFSD
-SFSDFSFS
-SFSDFS
-SFSFSF
-SFSDF
-SFDSDFS
-*/
+.logoName{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+.TittleGenres{
+    position: absolute;top: 200px;
+    width: 100%;
+    text-align: center;
+}
+.desGenres{
+    z-index: 55;
+    color: rgb(243, 177, 55);
+    width: 100%;
+    text-align: center;
+    height: 4350px;
+}
+.genre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.aboutGenres{
+    font-size: 1.3rem;
+    margin: 0 5px 0 5px;
+}
+.pictures{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+.startPic{
+    border-radius: 10px 0 0 10px;
+}
+.exPic{
+    width: 110px;
+    height: 250px;
+    object-fit: cover;
+}
+.endPic{
+    border-radius: 0 10px 10px 0;
+}
+.textAboutGenres{
+    top: 280px;
+}
+.h{
+    top: 140px;
+}
+.h1{
+    top: 189px;
+}
+.h2{
+    top: 235px;
+}
+/*Код для компьтеров*/
 @media (min-width: 1024px){
     body, html{
         margin: 0;
@@ -350,6 +342,9 @@ SFDSDFS
     }
     .menu-btn{
         display: none;
+    }
+    .desGenres{
+        height: 4650px;
     }
     .Hlink:hover{
         color: rgb(243, 177, 55);
