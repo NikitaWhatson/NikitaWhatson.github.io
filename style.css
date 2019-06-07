@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic');
+п»ї@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
-/*Код для телефонов*/
+/*РљРѕРґ РґР»СЏ С‚РµР»РµС„РѕРЅРѕРІ*/
 b{
     background-color: rgb(228, 53, 0);
     color: white;
@@ -296,7 +296,7 @@ footer{
 .h2{
     top: 235px;
 }
-/*Код для компьтеров*/
+/*РљРѕРґ РґР»СЏ РєРѕРјРїСЊС‚РµСЂРѕРІ*/
 @media (min-width: 1024px){
     body, html{
         margin: 0;
