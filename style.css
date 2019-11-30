@@ -318,7 +318,7 @@ footer{
     animation: arrowGoDown 2s ease infinite;
 }
 .imgOfTop{
-    width: 70px;
+    width: 50px;
     z-index: 0;
     object-fit: cover;
     height: 400px;
