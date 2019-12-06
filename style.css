@@ -356,9 +356,9 @@ footer{
     visibility: hidden;
 }
 .PrePhotoOfGame{
-    width: 70%;
+    width: 90%;
     height: 80vh;
-    margin-left: 15%;
+    margin: 0 7% 0 7%;
     object-fit: cover;
     position: absolute;
     border-radius: 10px;
@@ -379,6 +379,7 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 129vh;
+    width: 100%;
 }
 iframe{
     width: 80%;
