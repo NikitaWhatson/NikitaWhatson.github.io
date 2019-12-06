@@ -350,31 +350,25 @@ footer{
     z-index: 55;
 }
 .divLine{
-    height: 650px;
-    margin-top: 20px;
-    width: 20px;
-    border-radius: 10px;
-    margin-left: 40%;
+   visibility: hidden;
 }
 .divLineHoriz{
-    height: 2px;
-    border-radius: 10px;
-    margin-top: 380px;
-    width: 55%;
-    position: relative;right: -20%;
+    visibility: hidden;
 }
 .PrePhotoOfGame{
-    margin-left: 50px;
-    width: 32%;
-    height: 100%;
+    width: 70%;
+    height: 80vh;
+    margin-left: 15%;
     object-fit: cover;
     position: absolute;
-    border-radius: 20px 0 0 20px;
+    border-radius: 10px;
 }
 .aboutGame{
-    margin: 25px;
-    font-size: 20px;
+    margin: 0 5px 0 5px;
+    font-size: 15px;
     color:#ff5100;
+    margin-top: 80vh;
+    text-align: center;
 }
 .imgOfGame{
     object-fit: cover;
@@ -382,9 +376,12 @@ footer{
     margin-top: 1000px;
 }
 .Video{
-    margin: 25px 7% 0 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 129vh;
+}
+iframe{
+    width: 80%;
 }
 .VideoOfBattlefield{
     z-index: 5000;
@@ -401,7 +398,7 @@ footer{
     width: 100%;
 }
 .divGal{
-    margin: 45px 0 45px 0;
+    margin: 30px 0 45px 0;
     left: 5%;
     width: 90%;
 }
@@ -410,10 +407,6 @@ footer{
     width: 400px;
     height: 300px;
     transition: all 0.15s ease-in;
-}
-.img:hover{
-    transform: scale(1.05);
-    z-index: 5000
 }
 /*Код для компьтеров*/
 @media (min-width: 1024px){
