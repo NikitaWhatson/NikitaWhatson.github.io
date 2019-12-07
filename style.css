@@ -226,6 +226,7 @@ header{
 .more:hover{
     border-radius: 10% 40% / 50% 20%;
     background-color: rgb(255, 60, 0);
+    cursor: pointer;
 }
 footer{
     text-align: center;
