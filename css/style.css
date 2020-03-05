@@ -1,0 +1,228 @@
+/*
+colors palette:
+    -dark grey: #2B2D42
+    -red: #D62828
+    -orange: #F77F00
+    -yellow: #FCBF49
+    -lightyellow: #EDE7C4
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+::-webkit-scrollbar {
+    width: 18px;
+    background: transparent;
+    border: 1px solid #1f1f1fa6;
+    transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#F77F00, #D62828);
+    border-radius: 50px;
+    box-shadow: 0 0 10px 5px #00000083;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: #100e17;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 10px 30px 10px 30px;
+    transition: 0.2s ease-in-out;
+    border-bottom: none;
+}
+
+li:hover {
+    cursor: pointer;
+    background: #282633c5;
+}
+
+.logotype {
+    display: flex;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 21px 20px 5px 30px;
+    text-decoration: none;
+}
+
+.logotype:hover {
+    cursor: pointer;
+}
+
+#knight {
+    font-size: 60px;
+    color: #F77F00;
+}
+
+.name {
+    margin: 10px;
+}
+
+.name::first-letter {
+    font-size: 50px;
+}
+
+.Menu {
+    font-size: 23px;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+}
+
+.aboveMenu {
+    font-size: 50px;
+    padding: 2.8px;
+}
+
+.menuBtn {
+    color: #27fade;
+}
+
+.discountBtn {
+    color: #f5481d;
+}
+
+.deliveryBtn {
+    color: #fa8d27;
+}
+
+.helpBtn {
+    color: #EDE7C4;
+}
+
+.warrantyBtn {
+    color: #6cb1da;
+}
+
+.aboutBtn {
+    color: #8bc34a;
+}
+
+.login {
+    color: #fcd387;
+}
+
+.shoppingCart {
+    color: #17e797;
+}
+
+.countItems {
+    background-color: #D62828;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    left: 65px;
+    bottom: 40px;
+    color: #EDE7C4;
+    font-size: 13px;
+}
+
+.fireCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    color: rgb(236, 236, 236);
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient( #F77F00, #D62828);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fire {
+    background: linear-gradient(-90deg, #FCBF49, #F77F00, #D62828);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0 10px 0 10px;
+}
+
+.imgOfProduct {
+    width: 70%;
+    height: 80%;
+    object-fit: contain;
+    margin: 5% 0 0 -150px;
+}
+
+.card {
+    color: #F77F00;
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 400px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #F77F00;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.733);
+}
+
+.textAboutProduct {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionOfProduct {
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.details {
+    padding: 7px 10px;
+    background: #2B2D42;
+    border-radius: 5px 50px;
+    margin-top: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.discount {
+    font-size: 18px;
+    text-decoration: line-through;
+    text-decoration-color: #D62828;
+    color: #ec8b23;
+    margin-right: 20px;
+}
+
+.buyBtn {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(#F77F00, #D62828);
+    color: #2B2D42;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px 25px;
+    margin-top: 10px;
+    border: none;
+    padding: 0 15px 0 15px;
+}
+
+.priceOfProduct:hover {
+    cursor: pointer;
+}
