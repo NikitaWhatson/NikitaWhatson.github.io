@@ -1,70 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="https://kit.fontawesome.com/6375770dd6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <a href="./index.html">
-            <div class="logotype">
-                <i class="fas fa-chess-knight" id="knight"></i>
-                <p class="name">Knightly Quality</p>
-            </div>
-        </a>
-        <nav class="navBar">
-            <ul class="Menu">
-                <li class="menuBtn"><i class="fas fa-clipboard-list aboveMenu"></i>Menu</li>
-                <li class="deliveryBtn"><i class="fas fa-truck aboveMenu"></i>Delivery</li>
-                <li class="discountBtn"><i class="fas fa-percentage aboveMenu"></i>Discounts</li>
-                <li class="warrantyBtn"><i class="fas fa-newspaper aboveMenu"></i>Warranty</li>
-                <li class="aboutBtn"><i class="far fa-address-card aboveMenu"></i>About us</li>
-                <li class="login"><i class="fas fa-sign-in-alt aboveMenu"></i>Sign-up</li>
-                <li class="shoppingCart">
-                    <i class="fas fa-shopping-cart aboveMenu"></i> Корзина
-                    <div class="countItems">0</div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="category"><i class="fas fa-fire fire"></i>Hot deals<i class="fas fa-fire fire"></i></div>
-        <div class="fireCards">
-            <div class="card">
-                <img class="imgOfProduct" src="./Images/videocard.jpg" alt="">
-                <div class="textAboutProfuct">
-                    <p class="title">Видеокарта ASUS ROG STRIX RTX 2070 Super</p>
-                    <p class="descriptionOfProduct">Производительная игровая видеокарта с тихой и эффективной фирменной системой охлаждения, заводским разгоном и управляемой подсветкой Asus Aura.</p>
-                    <a class="details">Читать подробнее...</a>
-                    <div class="price">
-                        <p class="discount">42 000₽</p>
-                        <button class="buyBtn">40 000₽</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img class="imgOfProduct" src="./Images/monitor.png" alt="">
-                <div class="textAboutProfuct">
-                    <p class="title">Монитор<br> ASUS ROG ROG STRIX XG27VQ</p>
-                    <p class="descriptionOfProduct">ROG Strix XG27VQ – это современный геймерский монитор с изогнутым экраном формата Full-HD</p>
-                    <a class="details">Читать подробнее...</a>
-                    <div class="price">
-                        <p class="discount">34 000₽</p>
-                        <button class="buyBtn">32 000₽</button>
-                    </div>
-                </div>
+    <div id="app">
+        <div class="addForm">
+            <input v-model="TitleOfProduct" />
+            <button v-on:click="addToCard(TitleOfProduct)" class="add">Add</button>
+        </div>
+        <div class="cart">
+            <h3>Cart</h3>
+            <div v-for="(item, index) in itemsInCart" :key="index">
+                <product title :title=item></product>
             </div>
         </div>
-    </main>
-    <footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('product', {
+            data: function() {
+                return {
+                    count: 1,
+                    price: Math.ceil(Math.random() * 100)
+                }
+            },
+            props: ['title'],
+            template: `
+            <div class="product">
+                <h2>{{title}}</h2>
+                <button class="plus" v-on:click="count++">+</button>
+                <p class="count">{{count}} <p class="count" v-if="count == 1">товар</p><p class="count" v-else-if="count <= 4 && count > 1">товара</p><p class="count" v-else>товаров</p></p>
+                <button class="minus" v-on:click="count--">-</button>
+                <p class="count">Цена: {{price}}</p>
+            </div>
+            `
+        })
+        var app4 = new Vue({
 
-    </footer>
+            el: '#app',
+            data: {
+                itemsInCart: [],
+                TitleOfProduct: '',
+            },
+            methods: {
+                addToCard(item) {
+                    this.itemsInCart.push(item)
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
